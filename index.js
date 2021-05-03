@@ -29,7 +29,7 @@ const server=http.createServer((req,res)=>{
         })
         .on("end",function(err){
             if(err)return console.log("connection closed due to error",err);
-            console.log("End");
+            console.log("EndOne");
             res.end();
         });
     }
