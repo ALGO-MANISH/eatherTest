@@ -15,7 +15,7 @@ let temprature=tempVal.replace("{%tempVal%}",orgVal.main.temp);
 const server=http.createServer((req,res)=>{
     if(req.url=="/"){
         requests(
-            "http://api.openweathermap.org/data/2.5/weather?q=Pune&appid=38c5a3d4919fef7814445fc8833c84cc"
+            "http://api.openweathermap.org/data/2.5/weather?q=Guwahati&appid=38c5a3d4919fef7814445fc8833c84cc"
             )
         .on("data",function(chunk){
             const objData=JSON.parse(chunk);
